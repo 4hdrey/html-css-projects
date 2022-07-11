@@ -39,6 +39,7 @@ body {
     padding: 5px;
     text-align: center;
     align-items: center;
+    width: 100%;
 }
 .articles:hover, a:hover {
     text-decoration: underline;
