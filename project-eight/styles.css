@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    justify-content: space-between;
+}
+
+header > h1, header > p {
+    font-family: 'Jost', sans-serif;
+    font-size: 4vw;
+    color: white;
+}
+body {
+    background: url(background.jpg) no-repeat; 
+    background-size: 250vh;
+    background-position: top;
+}
+article {
+    display: flex;
+    width: 66%;
+    margin-top: 50px;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    box-sizing: content-box;
+}
+#page {
+    justify-content: center;
+    width: auto;
+    display: flex;
+    color: white;
+}
+article > h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    font-size: x-large;
+    align-content: center;
+}
+.form-row > input[type="text"], .form-row > input[type="email"], .form-row > button, .form-row > select, .form-row > input[type="radio"] {
+    width: 100%;
+    border: 1px solid greenyellow;
+    height: 30px;
+    font-family: 'Jost', sans-serif;
+    border-radius: 3px;
+}
+.form-row > fieldset {
+    border: none;
+}
+#button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+@media only screen and (min-width: 844px){
+    .form-row {
+        flex-direction: row;
+    }
+    .form-row > input[type="text"], .form-row > input[type="email"], .form-row > button, .form-row > select, .form-row > input[type="radio"] {
+        width: 485px;
+    }
+    article {
+        width: 600px;
+        padding: 0px 50px 0px 50px;
+    }
+    .form-row > label {
+        margin-right: 15px;
+    }
+    label {
+        width: 100px;
+        text-align: start;
+    }
+    fieldset legend{
+        float: left;
+        margin-right: 100px;
+    }
+    #button {
+        width: 100%;
+    }
+    #page {
+        align-content: center;
+    }
+    
+}
